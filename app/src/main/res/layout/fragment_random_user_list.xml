@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llSearchFilter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/SearchFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="3dp"
+            android:hint="Name"
+            android:imeOptions="actionDone"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="Autofill,TextFields" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_randomuser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.2" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#0C0C0C" />
+    <LinearLayout
+        android:id="@+id/btnWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weather"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#1C1C1C"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/up_arrow">
+
+        </ImageView>
+    </LinearLayout>
+</LinearLayout>
